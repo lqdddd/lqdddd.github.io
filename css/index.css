@@ -1,83 +1,110 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.a{
+
+.a {
     position: relative;
     width: 100%;
     height: 952px;
 }
-.b{
+
+.b {
     position: absolute;
     width: 100%;
     height: 100%;
 }
+
 video {
     width: 100%;
     height: 100%;
 }
-.c{
+
+.c {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 80%;
     height: 80%;
 }
-nav{
+
+nav {
     background-color: black;
     display: flex;
     align-items: center;
+    padding: 30px 0px;
 }
-.menu>a{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
+
+ul {
+    list-style-type: none;
+}
+
+#menu {
+    display: flex;
+}
+
+nav #menu li a {
     color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0 30px;
 }
-.menu>a:hover{
+
+nav #menu li a:hover {
     color: black;
     background: red;
-    padding: 40px 30px;
+    padding: 30px 30px;
     font-size: x-large;
 }
-.i{
+
+.i {
     padding: 30px 0;
+    position: absolute;
+    right: 50px;
 }
-.d{
+
+.d {
     padding-top: 100px;
     text-align: center;
 }
-.champ{
+
+.champ {
     margin-top: 100px;
 }
-h3{
+
+h3 {
     text-align: center;
     font-size: 20pt;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-style: italic;
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 70pt;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
 }
-h5{
+
+h5 {
     text-align: center;
     font-size: 12pt;
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
 }
-.d img{
+
+.d img {
     border-radius: 5%;
 }
-.button{
+
+.button {
     text-align: center;
     padding: 30px;
 }
-.bt1{
+
+.bt1 {
     background: red;
     color: white;
     padding: 6px 5px;
@@ -85,7 +112,8 @@ h5{
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
 }
-.bt2{
+
+.bt2 {
     background: #33ccff;
     color: white;
     padding: 6px 60px;
@@ -93,119 +121,138 @@ h5{
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
 }
-.cp{
+
+.cp {
     padding: 30px;
-    border-style:groove;
+    border-style: groove;
     width: 62%;
     margin: auto;
     text-align: center;
 }
-.cp>a{
+
+.cp>a {
     color: black;
     font-size: 16pt;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
     padding: 0 30px;
 }
-.cp>a:hover{
+
+.cp>a:hover {
     color: white;
     background: #33ccff;
     padding: 30px 30px;
     font-size: xx-large;
 }
-.f img{
+
+.f img {
     padding: 20px;
     border-radius: 50%;
     box-shadow: 1px 1px 0 1px;
+    height: 800px;
 }
-.f{
+
+.f {
     text-align: center;
     padding: 70px;
 }
-.h img{
-    position:absolute;
+
+.h img {
+    position: absolute;
     width: 100%;
 }
-.k img{
+
+.k img {
     position: absolute;
     width: 40%;
     left: 10%;
 }
-.l h3{
+
+.l h3 {
     color: white;
-    position:sticky;
+    position: sticky;
     text-align: center;
     padding-left: 50%;
     padding-top: 20%;
 }
-.l h2{
+
+.l h2 {
     color: white;
-    position:sticky;
+    position: sticky;
     text-align: center;
     padding-left: 50%;
     padding-top: 1%;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 80pt;
 }
-.l h4{
+
+.l h4 {
     color: white;
-    position:sticky;
+    position: sticky;
     text-align: center;
     padding-left: 50%;
     padding-top: 1%;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     padding-bottom: 1%;
 }
-.l .bt2{
-    position:sticky;
+
+.l .bt2 {
+    position: sticky;
     text-align: center;
     left: 70%;
-} 
-.n img{
+}
+
+.n img {
     position: absolute;
     width: 100%;
     padding-top: 200px;
 }
-.q img{
+
+.q img {
     position: absolute;
     width: 50%;
     left: 4%;
-    top: 4200px;   
+    top: 4200px;
 }
-.p h3{
+
+.p h3 {
     color: white;
     position: sticky;
     text-align: center;
     padding-left: 50%;
     padding-top: 30%;
 }
-.p h2{
+
+.p h2 {
     color: white;
-    position:sticky;
+    position: sticky;
     text-align: center;
     padding-left: 50%;
     padding-top: 1%;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 80pt;
 }
-.p h4{
+
+.p h4 {
     color: white;
-    position:sticky;
+    position: sticky;
     text-align: center;
     padding-left: 50%;
     padding-top: 1%;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     padding-bottom: 1%;
 }
-.p .bt2{
-    position:sticky;
+
+.p .bt2 {
+    position: sticky;
     text-align: center;
     left: 70%;
 }
-footer{
-    position:relative;
+
+footer {
+    position: relative;
     margin-top: 19%;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     background-color: black;
     color: white;
     text-align: center;
@@ -213,7 +260,647 @@ footer{
     height: auto;
     width: 100%;
 }
-footer img{
+
+footer img {
     width: 10%;
     margin-top: 20px;
+}
+
+#toggle {
+    display: none;
+    background: #000000;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 46.1875em) {
+    #menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #toggle {
+        display: block;
+    }
+
+    .i {
+        position: absolute;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .b {
+        position: absolute;
+        width: 414px;
+        height: 238px;
+        left: 0px;
+        top: -10px;
+    }
+
+    .c {
+        position: absolute;
+        width: 320px;
+        height: 238px;
+        left: 210px;
+        top: 110px;
+    }
+
+    .d img {
+        position: absolute;
+        width: 414px;
+        height: 147px;
+        left: 0px;
+        top: 300px;
+    }
+
+    h3 {
+        position: absolute;
+        width: 239px;
+        height: 91px;
+        left: 90px;
+        top: 511px;
+    }
+
+    h1 {
+        position: absolute;
+        width: 239px;
+        height: 91px;
+        left: 1px;
+        top: 530px;
+        font-size: 55pt;
+    }
+
+    h5 {
+        position: absolute;
+        left: 1px;
+        top: 620px;
+        padding-right: 1px;
+    }
+
+    .bt1 {
+        position: absolute;
+        width: 305px;
+        height: 27px;
+        left: 60px;
+        top: 703px;
+    }
+
+    .bt2 {
+        position: absolute;
+        width: 305px;
+        height: 27px;
+        left: 60px;
+        top: 743px;
+    }
+
+    .cp {
+        position: absolute;
+        width: 414px;
+        height: 0px;
+        left: 0px;
+        top: 862px;
+        border: 0.25px solid #000000;
+    }
+
+    .cp>a.asa {
+        position: absolute;
+        width: 50px;
+        height: 14px;
+        top: 24px;
+        left: -28px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .cp>a.figh {
+        position: absolute;
+        width: 50px;
+        height: 14px;
+        top: 24px;
+        left: 60px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .cp>a.mage {
+        position: absolute;
+        width: 50px;
+        height: 14px;
+        top: 24px;
+        left: 130px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .cp>a.mark {
+        position: absolute;
+        width: 50px;
+        height: 14px;
+        top: 24px;
+        left: 180px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .cp>a.sp {
+        position: absolute;
+        width: 50px;
+        height: 14px;
+        top: 24px;
+        left: 250px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .cp>a.tank {
+        position: absolute;
+        width: 50px;
+        height: 14px;
+        top: 24px;
+        left: 330px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .cp>a:hover {
+        display: none;
+    }
+
+    .f {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 277px;
+        height: 268px;
+        left: 0px;
+        top: 862px;
+        border-width: 1px 1px 2px 2px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 138.5px;
+    }
+
+    .f img {
+        height: 300px;
+    }
+
+    .h img {
+        position: absolute;
+        width: 414px;
+        height: 487px;
+        left: 0px;
+        top: 1286px;
+    }
+
+    .k img {
+        position: absolute;
+        width: 241px;
+        height: 242px;
+        left: 106px;
+        top: 1509px;
+    }
+
+    .l h3 {
+        position: absolute;
+        width: 100%;
+        left: -100px;
+        top: 1249px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    .l h2 {
+        position: absolute;
+        width: 185px;
+        height: 116px;
+        left: -100px;
+        top: 1375px;
+
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    .l h4 {
+        position: absolute;
+        width: 100%;
+        left: -100px;
+        top: 1430px;
+
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 14px;
+        text-align: center;
+    }
+
+    .l .bt2 {
+        position: absolute;
+        width: 50%;
+        left: 110px;
+        top: 1488px;
+    }
+
+    .n img {
+        position: absolute;
+        width: 414px;
+        height: 610px;
+        left: 0px;
+        top: 1573px;
+    }
+
+    .q img {
+        position: absolute;
+        width: 319px;
+        height: 200px;
+        left: 50px;
+        top: 1785px;
+    }
+
+    .p h3 {
+        position: absolute;
+        width: 100%;
+        left: -100px;
+        top: 1865px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    .p h2 {
+        position: absolute;
+        width: 185px;
+        height: 116px;
+        left: -120px;
+        top: 2030px;
+
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    .p h4 {
+        position: absolute;
+        width: 100%;
+        left: -100px;
+        top: 2080px;
+
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 14px;
+        text-align: center;
+    }
+
+    .p .bt2 {
+        position: absolute;
+        width: 50%;
+        left: 110px;
+        top: 2128px;
+    }
+
+    footer {
+        position: absolute;
+        width: 414px;
+        height: 18px;
+        left: 0px;
+        top: 2101px;
+    }
+
+    footer h2 {
+        position: absolute;
+        width: 211px;
+        height: 15px;
+        left: 101px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    footer img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    #menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #toggle {
+        display: block;
+    }
+
+    .i {
+        position: absolute;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .b {
+        position: absolute;
+        width: 768px;
+        height: 384px;
+        left: 0px;
+        top: 5px;
+    }
+
+    .c {
+        position: absolute;
+        width: 768px;
+        height: 318px;
+        left: 385px;
+        top: 195px;
+    }
+
+    .d img {
+        position: absolute;
+        width: 673px;
+        height: 261px;
+        left: 48px;
+        top: 507px;
+    }
+
+    h3 {
+        position: absolute;
+        width: 220px;
+        height: 79px;
+        left: 279px;
+        top: 802px;
+    }
+
+    h1 {
+        position: absolute;
+        width: 220px;
+        height: 79px;
+        left: 129px;
+        top: 820px;
+    }
+
+    h5 {
+        position: absolute;
+        width: 643px;
+        left: 60px;
+        top: 913px;
+    }
+
+    .bt1 {
+        position: absolute;
+        width: 305px;
+        height: 27px;
+        left: 60px;
+        top: 1003px;
+    }
+
+    .bt2 {
+        position: absolute;
+        width: 305px;
+        height: 27px;
+        left: 380px;
+        top: 1003px;
+    }
+
+    .cp {
+        position: absolute;
+        width: 768px;
+        top: 1062px;
+        border: 0.25px solid #000000;
+    }
+
+    .cp>a.asa {
+        position: absolute;
+        width: 50px;
+        height: 14px;
+        top: 24px;
+        left: -18px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 14px;
+    }
+
+    .cp>a.figh {
+        position: absolute;
+        width: 50px;
+        height: 14px;
+        top: 24px;
+        left: 125px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 14px;
+    }
+
+    .cp>a.mage {
+        position: absolute;
+        width: 50px;
+        height: 14px;
+        top: 24px;
+        left: 250px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 14px;
+    }
+
+    .cp>a.mark {
+        position: absolute;
+        width: 50px;
+        height: 14px;
+        top: 24px;
+        left: 360px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 14px;
+    }
+
+    .cp>a.sp {
+        position: absolute;
+        width: 50px;
+        height: 14px;
+        top: 24px;
+        left: 500px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 14px;
+    }
+
+    .cp>a.tank {
+        position: absolute;
+        width: 50px;
+        height: 14px;
+        top: 24px;
+        left: 640px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 14px;
+    }
+
+    .cp>a:hover {
+        display: none;
+    }
+
+    .f img {
+        box-sizing: border-box;
+        position: absolute;
+        width: 507px;
+        height: 497px;
+        left: 125px;
+        top: 1175px;
+    }
+
+    .h img {
+        position: absolute;
+        width: 768px;
+        height: 640px;
+        top: 1736px;
+    }
+
+    .k img {
+        position: absolute;
+        width: 321px;
+        height: 342px;
+        left: 236px;
+        top: 2027px;
+    }
+
+    .l h3 {
+        position: absolute;
+        width: 768px;
+        height: 98px;
+        left: -200px;
+        top: 1650px;
+    }
+
+    .l h2 {
+        position: absolute;
+        width: 768px;
+        height: 98px;
+        left: -200px;
+        top: 1810px;
+    }
+
+    .l h4 {
+        position: absolute;
+        width: 768px;
+        left: -200px;
+        top: 1915px;
+    }
+
+    .l .bt2 {
+        position: absolute;
+        width: 250px;
+        height: 50px;
+        left: 250px;
+        top: 1993px;
+    }
+
+    .n img {
+        position: absolute;
+        width: 768px;
+        height: 900px;
+        left: 0px;
+        top: 2176px;
+    }
+
+    .q img {
+        position: absolute;
+        width: 716px;
+        height: 473px;
+        left: 23px;
+        top: 2400px;
+    }
+
+    .p h3 {
+        position: absolute;
+        width: 550px;
+        left: -80px;
+        top: 2590px;
+    }
+
+    .p h2 {
+        position: absolute;
+        width: 550px;
+        left: -180px;
+        top: 2820px;
+    }
+
+    .p h4 {
+        position: absolute;
+        width: 768px;
+        left: -190px;
+        top: 2928px;
+    }
+
+    .p .bt2 {
+        position: absolute;
+        width: 301px;
+        height: 32px;
+        left: 237px;
+        top: 2990px;
+    }
+
+    footer {
+        position: absolute;
+        width: 768px;
+        height: 20px;
+        left: 0px;
+        top: 2930px;
+    }
+
+    footer h2 {
+        position: absolute;
+        width: 768px;
+        height: 15px;
+        left: 10px;
+        font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    footer img {
+        display: none;
+    }
 }

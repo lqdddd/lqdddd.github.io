@@ -7,25 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
+<script>
+    $(document).ready(function () {
+        $('#toggle').click(function(){
+            $('nav').slideToggle();
+        })
+    })
+</script>
 
 <body>
-    <nav>
-        <img src="../img/Logo_riot_game_2019.png" alt="" width="100px" class="i">
-        <div class="menu">
-            <a href="./index.html">GAME</a>
-            <a href="./champions.html">CHAMPIONS</a>
-            <a href="">NEWS</a>
-            <a href="">PATCH NOTES</a>
-            <a href="">DISCOVER</a>
-            <a href="">ESPORT</a>
-            <a href="">UNIVERSE</a>
-            <a href="">SHOP</a>
-            <a href="">SUPPORT</a>
-            <a href="">DOWNLOAD</a>
-            <a href="">SIGN IN / SIGN UP</a>
+    <div class="wrapper">
+        <div id="header">
+            <div id="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <img src="../img/Logo_riot_game_2019.png" alt="" width="100px" class="i">
+            <nav>
+                
+                <ul id="menu">
+                    <li><a href="./index.html">GAME</a></li>
+                    <li><a href="./champions.html">CHAMPIONS</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">PATCH NOTES</a></li>
+                    <li><a href="">DISCOVER</a></li>
+                    <li><a href="">ESPORT</a></li>
+                    <li><a href="">UNIVERSE</a></li>
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">SUPPORT</a></li>
+                    <li><a href="">DOWNLOAD</a></li>
+                    <li><a href="./signin.html">SIGN IN / SIGN UP</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </div>
+
     <div class="a">
         <div class="b">
             <video src="../img/hero-blurred.webm" autoplay muted></video>
@@ -35,32 +56,32 @@
         </div>
     </div>
     <div class="d">
-        <img src="../img/LOL_Homepage_Modal_(1680x650)_(1).jpg" alt="" width="1400px">
+        <img src="../img/LOL_Homepage_Modal_(1680x650)_(1).jpg" alt="" width="">
     </div>
     <div class="champ">
         <h3>CHOOSE YOUR</h3>
         <H1>CHAMPIONS</H1>
-        <h5>Whether you like to dive straight into the fray, support your teammates,</h5>
-        <h5>or something in between, there's a spot for you on the Rift</h5>
+        <h5>Whether you like to dive straight into the fray, support your teammates,
+            or something in between, there's a spot for you on the Rift</h5>
     </div>
     <div class="button">
         <a href="../html/champions.html"><button class="bt1">DISCOVER MORE CHAMPIONS</button> </a>
         <button class="bt2">PLAY NOW</button>
     </div>
     <div class="cp">
-        <a href="">ASSASSINS</a>
-        <a href="">FIGHTERS</a>
-        <a href="">MAGES</a>
-        <a href="">MARKMEN</a>
-        <a href="">SUPPORTS</a>
-        <a href="">TANKS</a>
+        <a class="asa" href="">ASSASSINS</a>
+        <a class="figh" href="">FIGHTERS</a>
+        <a class="mage" href="">MAGES</a>
+        <a class="mark" href="">MARKMEN</a>
+        <a class="sp" href="">SUPPORTS</a>
+        <a class="tank" href="">TANKS</a>
     </div>
     <div class="f">
-        <img src="../img/fighter-7a08920b696ecdb673edeeae1d3c616e.png" alt="" height="800px">
+        <img src="../img/fighter-7a08920b696ecdb673edeeae1d3c616e.png" alt="" height="">
     </div>
     <div class="g">
         <div class="h">
-            <img src="../img/d6b063fa14d5993696ab640b4c18ad1d.jpg" alt="" width="100%">
+            <img src="../img/d6b063fa14d5993696ab640b4c18ad1d.jpg" alt="" width="">
         </div>
         <div class="k">
             <img src="../img/assassin-two-3a0fb5383eca19a4bc9b3c53310380bf.png" alt="">

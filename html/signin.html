@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"> </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .a {
+        position: relative;
+        width: 100%;
+        height: 952px;
+    }
+
+    .b {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .c {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+    }
+
+    nav {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        padding: 30px 0px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    nav #menu li a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0 30px;
+    }
+
+    nav #menu li a:hover {
+        color: black;
+        background: red;
+        padding: 30px 30px;
+        font-size: x-large;
+    }
+
+    .i {
+        padding: 30px 0;
+        position: absolute;
+        right: 50px;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div id="header">
+            <div id="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <img src="../img/Logo_riot_game_2019.png" alt="" width="100px" class="i">
+            <nav>
+
+                <ul id="menu">
+                    <li><a href="./index.html">GAME</a></li>
+                    <li><a href="./champions.html">CHAMPIONS</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">PATCH NOTES</a></li>
+                    <li><a href="">DISCOVER</a></li>
+                    <li><a href="">ESPORT</a></li>
+                    <li><a href="">UNIVERSE</a></li>
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">SUPPORT</a></li>
+                    <li><a href="">DOWNLOAD</a></li>
+                    <li><a href="./signin.html">SIGN IN / SIGN UP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="a">
+        <div class="b">
+            <video src="../img/hero-blurred.webm" autoplay muted></video>
+        </div>
+        <div class="c">
+            <video src="../img/League of Legends.mp4" autoplay muted></video>
+        </div>
+    </div>
+    <h3 style="text-align: center;">FORM ĐĂNG KÝ THÀNH VIÊN</h3>
+    <form name="form" class="col-5 mx-auto border border-primary">
+        <div class="form-g">
+            <label>Họ và tên</label>
+            <input name="hoten" ng-model="hoten" required class="form-control bg-info" style="color:white;">
+            <em ng-if="form.hoten.$invalid" class="text-danger h6">Không được để trống họ và tên</em>
+        </div> <br>
+        <div class="form-g">
+            <label>Năm sinh</label>
+            <input type="date" name="namsinh" ng-model="namsinh" required class="form-control bg-warning"
+                style="color: black;">
+            <em ng-if="form.namsinh.$invalid" class="text-danger h6">Không được để trống năm sinh</em>
+        </div> <br>
+        <div class="form-g">
+            <label>Giới tính</label>
+            <fieldset class="border border-success p-3">
+                <input name="gioitinh" ng-model="gioitinh" type="radio" value="1"> Nam
+                <input name="gioitinh" ng-model="gioitinh" type="radio" value="2"> Nữ
+            </fieldset>
+            <em ng-if="!gioitinh" class="text-danger h6">Chọn đúng giới tính</em>
+        </div> <br>
+        <div class="form-g">
+            <label>Email</label>
+            <input name="email" ng-model="email" required minlength="2" maxlength="100"
+                class="form-control bg-secondary" style="color: white;">
+            <em ng-if="form.email.$invalid" class="text-danger h6">Không được để trống Email</em>
+        </div> <br>
+        <div class="form-g">
+            <label>CMND</label>
+            <input name="cmnd" ng-model="cmnd" required maxlength="9" class="form-control bg-secondary"
+                style="color: white;">
+            <em ng-if="form.cmnd.$invalid" class="text-danger h6">Số CMND có 9 số</em>
+        </div> <br>
+        <div class="form-g">
+            <label>Địa chỉ</label>
+            <input name="diachi" ng-model="diachi" required minlength="2" maxlength="100"
+                class="form-control bg-primary" style="color: black;">
+            <em ng-if="form.diachi.$invalid" class="text-danger h6">Không được để trống địa chỉ</em>
+        </div>
+        <div class="form-g">
+            <label>Quê quán</label>
+            <input name="quequan" ng-model="quequan" required minlength="2" maxlength="100" class="form-control bg-info"
+                style="color: white;">
+            <em ng-if="form.quequan.$invalid" class="text-danger h6">Không được để trống quê quán</em>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-info" style="margin-left: 330px;">Đăng ký</button>
+        </div>
+    </form>
+</body>
+
+</html>
